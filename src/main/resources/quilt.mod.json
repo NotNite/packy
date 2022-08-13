@@ -1,0 +1,40 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.notnite",
+		"id": "packy",
+		"version": "${version}",
+		"metadata": {
+			"name": "Packy",
+			"description": "Backpacks that let you access your ender chest, anywhere.",
+			"contributors": {
+				"NotNite": "Owner"
+			},
+			"contact": {
+				"homepage": "https://github.com/NotNite/packy",
+				"issues": "https://github.com/NotNite/packy/issues",
+				"sources": "https://github.com/NotNite/packy"
+			},
+			"icon": "assets/packy/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.notnite.packy.Packy"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			}
+		]
+	},
+	"mixin": "packy.mixins.json"
+}
